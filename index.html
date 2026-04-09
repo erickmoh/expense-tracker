@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <h1>💸 Expense Tracker</h1>
+
+    <div class="balance-card">
+        <h2>Total Balance</h2>
+        <p>$<span id="total">0</span></p>
+    </div>
+
+    <div class="card form">
+        <input id="name" placeholder="Expense name">
+        <input id="amount" type="number" placeholder="Amount">
+
+        <select id="category">
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Shopping</option>
+            <option>Other</option>
+        </select>
+
+        <input id="date" type="date">
+
+        <button id="addBtn">Add Expense</button>
+    </div>
+
+    <div class="card">
+        <h3>Transactions</h3>
+        <ul id="list"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
